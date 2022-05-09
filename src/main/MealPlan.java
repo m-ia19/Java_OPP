@@ -23,7 +23,7 @@ public class MealPlan {
 	    meal.addFruit(fruits[i], weights[i]);
 	}
 
-	/* TODO: 5.1 e) Remove the comment to generate some vegetable objects
+	//TODO: 5.1 e) Remove the comment to generate some vegetable objects
 	Vegetable[] vegetables = new Vegetable[5];
 	vegetables[0] = new Vegetable("Pumpkin", 26, 15);
 	vegetables[1] = new Vegetable("Broccoli", 34, 2);
@@ -38,9 +38,12 @@ public class MealPlan {
 
 	for (int i = 0; i < vegetables.length; i++) {
 	    // TODO 5.1 i) Cook the vegetable until it is edible
+		while(!vegetables[i].isEdible()) {
+			vegetables[i].cookIt();
+		}
 	    meal.addVegetable(vegetables[i], weights[i]);
 	}
-	*/
+	
 
 	meal.printStatus();
     }
