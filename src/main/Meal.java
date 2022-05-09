@@ -2,18 +2,18 @@ package main;
 
 public class Meal {
 
-    // TODO 5.1 a) kcalSum
+	private float kcalSum;
 
     // TODO 5.1 j) ingredients, amounts
     // - Think about how to keep track of how many ingredients were added!
 
     public Meal() {
-	// TODO a) initialize
+	 kcalSum= 0;
     }
 
     public void addFruit(Fruit fruit, int weight) {
 	//TODO 5.1 a) Remove this comment after creating the attribute kcalSum.
-	// kcalSum += fruit.computeCalories(weight);
+	 kcalSum += fruit.computeCalories(weight);
 	// TODO 5.1j) Add information to ingredients and amounts.
     }
 
